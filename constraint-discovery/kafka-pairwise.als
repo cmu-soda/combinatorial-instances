@@ -16,12 +16,12 @@ sig Partition {}
 
 sig Replica {
 	-- Replicates a single partition
-	replicates: Partition
+	replicates: set Partition
 }
 
 sig Broker {
 	-- Can store 0 or more replicas
-	stores: Replica
+	stores: set Replica
 }
 
 
