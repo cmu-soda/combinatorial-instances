@@ -57,6 +57,8 @@ pred isManyMany[r: univ->univ] {
  * Pairwise Constraints 
  ***********************/
 
+run alloyBasic {}
+
 run constraint1 {
 	isOneOne[replicates]
 	isOneOne[stores]
